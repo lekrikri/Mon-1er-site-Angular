@@ -1,0 +1,6 @@
+<div class="row mt-3">
+    <article class="col-3" *ngFor="let a of articles">
+      <img [src]="a.url" alt="" class="img-fluid">
+      <h3 class="h6 text-center">{{a.titre}}</h3>
+    </article>
+  </div>

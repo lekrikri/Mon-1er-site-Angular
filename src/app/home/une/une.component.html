@@ -1,0 +1,24 @@
+ <!-- ng g c home/une-->
+
+    <!--h2>lorem4-->
+    <h2>Bienvenu sur mon premier site en Angular</h2>
+    <!--figure>img[src="https://via.placeholder.com/400x200"]*2-->
+    <!-- 
+      Realiser une grille de 4 colonnes qui va contenir 8 articles dans chaque article image et un h3 qui va contenir 2 mots
+    -->
+    <!--.row>article.col-3*8>img[src="https://via.placeholder.com/200x100"].img-fluid+h3>lorem2-->
+    <!-- pouvez vous me mettre l'integralite de ca code dans un composant homme/grille-->
+    <!--
+    <figure class="row my-5">
+      <img src="assets/image1.jpg" width="200" alt="" class="col-6">
+      <img src="assets/image2.jpg" width="200" alt="" class="col-6">
+    </figure>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magnam explicabo dolore illum impedit, laudantium neque natus sit molestiae officiis at nam ipsam deleniti minima exercitationem, inventore iure, sequi sunt?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta magnam explicabo dolore illum impedit, laudantium neque natus sit molestiae officiis at nam ipsam deleniti minima exercitationem, inventore iure, sequi sunt?
+
+    -->
+    <h2>{{titre}}</h2>
+        <!--figure>img[src="https://via.placeholder.com/400x200"]*2-->
+        <figure class="row my-5">
+        <img *ngFor="let url of images" [src]="url" alt="" class="col-6">
+        </figure>   
+        {{contenu}}
